@@ -5,11 +5,13 @@ import 'package:flutter/widgets.dart';
 class SquareForecastDesc extends StatefulWidget {
   final Widget image;
   final String text;
+  final Color textColor;
 
   const SquareForecastDesc({
     Key? key,
     required this.image,
     required this.text,
+    required this.textColor,
   }) : super(key: key);
 
   @override
@@ -30,11 +32,12 @@ class _SquareForecastDescState extends State<SquareForecastDesc> {
               borderRadius: BorderRadius.circular(20)),
           child: widget.image,
         ),
+        const SizedBox(height: 5,),
         Text(
           widget.text,
-          style: const TextStyle(
+          style: TextStyle(
               fontFamily: 'Poppins',
-              color: Colors.black54,
+              color: widget.textColor,
               fontWeight: FontWeight.w700,
               fontSize: 15,
               height: 2),

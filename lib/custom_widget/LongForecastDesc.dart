@@ -59,14 +59,13 @@ class _LongForecastDesc extends State<LongForecastDesc> {
             Text(
               widget.textHour,
               style:  TextStyle(
-                      fontSize: 13,
+                      fontSize: 15,
                       fontFamily: 'Poppins',
                       color: widget.isActive? Colors.white : Colors.grey,
                       fontWeight: FontWeight.w600,
                       height: 1),
             ),
             Container(
-              padding: const EdgeInsets.all(10),
               width: 60,
               height: 60,
               decoration:
@@ -79,7 +78,7 @@ class _LongForecastDesc extends State<LongForecastDesc> {
                 fontSize: 20,
                 color: widget.isActive ? Colors.white : Colors.grey,
                 fontFamily: 'Poppins',
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.bold,
                 height: 1,
               ),
             )
